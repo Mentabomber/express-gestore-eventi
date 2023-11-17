@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "title": "Event Title",
+        "description": "Event Description",
+        "date": "2023-12-01",
+        "maxSeats": 100
+      },
+      {
+        "id": 2,
+        "title": "Another Event",
+        "description": "Description for another event",
+        "date": "2023-12-15",
+        "maxSeats": 50
+      }
+]
