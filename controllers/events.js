@@ -25,14 +25,14 @@ function store(req, res) {
     const { id, title, description, date, maxSeats } = req.body;
   
     if (!id || !title || !description || !date || !maxSeats) {
-      return res.status(400).json({ error: "Incomplete data for creating an event." });
+      return res.status(400).json({ err: "Incomplete data for creating an event." });
     }
   
    
     const existingEvent = Event.findEvent(id, res);
     
     if (existingEvent) {
-      return res.status(409).json({ error: "Event with the same ID already exists." });
+      return res.status(409).json({ err: "Event with the same ID already exists." });
     }
   
    
@@ -45,13 +45,13 @@ function store(req, res) {
   const { title, description, date, maxSeats } = req.body;
   const id = parseInt(req.params.event);
   if (!id || !title || !description || !date || !maxSeats) {
-    return res.status(400).json({ error: "Incomplete data for updating an event." });
+    return res.status(400).json({ err: "Incomplete data for updating an event." });
   }
 
   
   const existingEvent = Event.findEvent(id);
   if (!existingEvent) {
-    return res.status(404).json({ error: "Event not found." });
+    return res.status(404).json({ err: "Event not found." });
   }
 
 
@@ -73,9 +73,9 @@ function store(req, res) {
     Event.writeEvents(updatedEvents);
     
     res.json({ message: "Event updated successfully." });
-  } catch (error) {
-    console.error("Error updating event:", error);
-    res.status(500).json({ error: "Internal Server Error" });
+  } catch (err) {
+    console.err("err updating event:", err);
+    res.status(500).json({ err: "Internal Server err" });
   }
 }
 

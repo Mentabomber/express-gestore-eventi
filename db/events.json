@@ -22,9 +22,9 @@
   },
   {
     "id": 4,
-    "title": "evento bello",
-    "description": "un bel evento",
-    "date": "2023/10/05",
-    "maxSeats": 75
+    "title": "evento brutto",
+    "description": "un brutto evento",
+    "date": "2024/10/05",
+    "maxSeats": 70
   }
 ]
