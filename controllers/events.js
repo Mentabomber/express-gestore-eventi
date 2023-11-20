@@ -3,7 +3,7 @@ const { Event } = require("../models/event");
 function index(req,res){
   
   const { date, maxSeats } = req.query;
-
+  
 
   const events = Event.findAllEvents();
 
