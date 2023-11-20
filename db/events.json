@@ -1,16 +1,30 @@
 [
-    {
-        "id": 1,
-        "title": "Event Title",
-        "description": "Event Description",
-        "date": "2023-12-01",
-        "maxSeats": 100
-      },
-      {
-        "id": 2,
-        "title": "Another Event",
-        "description": "Description for another event",
-        "date": "2023-12-15",
-        "maxSeats": 50
-      }
+  {
+    "id": 1,
+    "title": "evento bello",
+    "description": "un bel evento",
+    "date": "2023/10/05",
+    "maxSeats": 125
+  },
+  {
+    "id": 2,
+    "title": "evento brutto",
+    "description": "un brutto evento",
+    "date": "2024/10/05",
+    "maxSeats": 25
+  },
+  {
+    "id": 3,
+    "title": "evento bello",
+    "description": "un bel evento",
+    "date": "2023/10/05",
+    "maxSeats": 75
+  },
+  {
+    "id": 4,
+    "title": "evento bello",
+    "description": "un bel evento",
+    "date": "2023/10/05",
+    "maxSeats": 75
+  }
 ]
